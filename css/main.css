@@ -1,0 +1,1539 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* start  navbar */
+.navbarr {
+	list-style: none;
+	margin: 0;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, .6);
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+
+}
+
+.navbarr .movycat {
+	float: left
+}
+
+.navbarr .movycat img {
+	border: 1px solid orange;
+	border-radius: 50%
+}
+
+.navbarr .movycat span {
+	color: #CCC;
+	font-weight: 900;
+	font-style: italic;
+
+
+}
+
+.navbarr .movycat span:hover {
+	color: #ffea00;
+}
+
+.navbarr li {
+	display: inline-block;
+	padding: 10px
+}
+
+.navbarr li a {
+	color: #EEE;
+	text-decoration: none
+}
+
+.navbarr li a.active {
+	color: #ffea00
+}
+
+/* End navbar */
+
+/* start fixed menu ..(into home section)*/
+
+.fixed-menu {
+	background-color: #333;
+	color: #EEE;
+	padding: 10px;
+	position: fixed;
+	left: -220px;
+	top: 0;
+	height: 100%;
+	min-width: 220px;
+	z-index: 9999;
+}
+
+.fixed-menu .fa-gear {
+	position: absolute;
+	right: -30px;
+	top: 60px;
+	background-color: #333;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 0 10px 10px 0;
+	cursor: pointer
+}
+
+.fixed-menu .change-colors li {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	margin-top: 5px;
+	cursor: pointer;
+
+}
+
+.fixed-menu .change-colors [data-color='red'] {
+	background-color: #c0392b
+}
+
+.fixed-menu .change-colors [data-color='blue'] {
+	background-color: #0984e3
+}
+
+.fixed-menu .change-colors [data-color='green'] {
+	background-color: #19733e
+}
+
+.fixed-menu .change-colors [data-color='yellow'] {
+	background-color: #ffa502
+}
+
+/*start coordinate icons links .. (into fixed-menu)*/
+
+.fixed-menu .religion img {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: -5px;
+	left: -50px;
+	cursor: pointer;
+}
+
+.fixed-menu .religion a {
+	position: absolute;
+	top: 175px;
+	left: 60px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #CCC;
+	font-weight: bold
+}
+
+
+.fixed-menu .Elda7e7 img {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: -6px;
+	left: -50px;
+	cursor: pointer;
+}
+
+.fixed-menu .Elda7e7 a {
+	position: absolute;
+	top: 225px;
+	left: 60px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #CCC;
+	font-weight: bold
+}
+
+.fixed-menu .cat img {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: -8px;
+	left: -50px;
+	cursor: pointer;
+}
+
+.fixed-menu .cat a {
+	position: absolute;
+	top: 278px;
+	left: 60px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #CCC;
+	font-weight: bold
+}
+
+/*End coordinate icons links .. (into fixed-menu)*/
+/* End fixed menu ..(into home section)*/
+/* start icon to change color in our page ..(this icone into fixed menu)*/
+
+
+
+
+/* start website theme colors*/
+
+[data-default-color='red'] .skin-color {
+	color: #c0392b
+}
+
+[data-default-color='red'] .skin-background {
+	background-color: #c0392b;
+	color: #FFF;
+}
+
+[data-default-color='blue'] .skin-color {
+	color: #0984e3
+}
+
+[data-default-color='blue'] .skin-background {
+	background-color: #0984e3;
+	color: #FFF;
+}
+
+
+[data-default-color='green'] .skin-color {
+	color: #19733e
+}
+
+[data-default-color='green'] .skin-background {
+	background-color: #19733e;
+	color: #FFF;
+}
+
+
+[data-default-color='yellow'] .skin-color {
+	color: #ffa502
+}
+
+[data-default-color='yellow'] .skin-background {
+	background-color: #ffa502;
+	color: #FFF;
+}
+
+
+/* End icon to change color in our page ..(this icone into fixed menu)*/
+/* start arrange sections*/
+.block {
+	min-height: 1200px;
+	background-color: #EEE;
+	margin-bottom: 20px;
+	padding: 50px 0;
+	text-align: center;
+	margin-top: 0px;
+}
+
+/* End arrange sections*/
+
+
+
+/*start button that make scroll to top*/
+.scroll-to-top {
+	background-color: #080;
+	color: #fff;
+	display: block;
+	padding: 10px 15px 13px;
+	position: fixed;
+	bottom: 75px;
+	right: 10px;
+	display: none;
+
+}
+
+/*End button that make scroll to top*/
+/*start popup.. window */
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: rgba(187, 187, 187, 0.9);
+	display: none;
+
+}
+
+.popup .inner {
+	background-color: #fff;
+	border: 1px solid #CCC;
+	padding: 20px;
+	width: 430px;
+	height: 360px;
+	left: 50%;
+	position: fixed;
+	margin-left: -200px;
+	top: 50%;
+	margin-top: -125px;
+	border-radius: 5px;
+}
+
+.popup .inner button {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	padding: 2px 8px;
+	background-color: #EEE;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	cursor: pointer
+}
+
+.popup .inner img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-left: 9px;
+
+}
+
+.popup .inner p {
+	border: 1px solid green;
+	padding: 4px 3px 4px 14px;
+	margin-top: 7px;
+}
+
+/*End popup.. window */
+
+
+/*start popups botton*/
+.show-popup {
+	cursor: pointer;
+	float: left;
+	text-align: center;
+	margin: 10px;
+	background-color: #FFF;
+	width: 150px;
+	border-radius: 10px;
+	padding: 10px;
+	font-weight: bold;
+	color: #928440
+}
+
+/*End popups botton*/
+/* start Error message .. into Home section*/
+.error-message {
+	padding: 10px;
+	background-color: rgba(231, 76, 60, .7);
+	color: #FFF;
+	font-size: 20px;
+	width: 600px;
+	text-align: center;
+	position: fixed;
+	top: 80px;
+	right: -600px;
+	z-index: 9999;
+}
+
+
+/* End Error message .. into Home section*/
+
+/*start  buttons with effects..(Exists in Home section)*/
+
+.buttons-effect {
+	cursor: pointer;
+	display: inline-block;
+	margin-left: -330px;
+	margin-top: 70px;
+	text-align: center;
+	background-color: #c0392b;
+	width: 150px;
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #FFF;
+	border: none;
+	position: relative;
+	overflow: hidden;
+	float: left;
+
+
+}
+
+
+.buttons-effect.from-left span:first-child {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 100%;
+	display: block;
+	background-color: #e74c3c;
+	z-index: 1;
+}
+
+.buttons-effect.from-left span:last-child {
+	position: relative;
+	z-index: 2
+}
+
+/*start button effect2 ..(Exists in Home section)*/
+.buttons-effect2 {
+	cursor: pointer;
+	display: inline-block;
+	margin-left: -160px;
+	margin-top: 70px;
+	text-align: center;
+	background-color: #0984e3;
+	width: 150px;
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #FFF;
+	border: none;
+	position: relative;
+	overflow: hidden;
+	float: left
+}
+
+.buttons-effect2.from-top span:first-child {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 0;
+	display: block;
+	background-color: #74b9ff;
+	z-index: 1;
+}
+
+.buttons-effect2.from-top span:last-child {
+	position: relative;
+	z-index: 2
+}
+
+/*End button effect2 ..(Exists in Home section)*/
+/*Start button effect3  border-left ..(Exists in Home section)*/
+
+.buttons-effect3 {
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 70px;
+	text-align: center;
+	background-color: #FFF;
+	width: 150px;
+	padding: 10px;
+	border-radius: 0;
+	font-weight: bold;
+	color: #0984e3;
+	border: none;
+	position: relative;
+	overflow: visible;
+	float: left
+}
+
+.buttons-effect3.border-left span:first-child {
+	position: absolute;
+	left: 0;
+	top: auto;
+	bottom: -3px;
+	width: 0;
+	height: 4px;
+	display: block;
+	border: none;
+	background-color: #0984e3;
+	z-index: 1;
+}
+
+.buttons-effect3.border-left span:last-child {
+	position: relative;
+	z-index: 2
+}
+
+/*End button effect3  border-left ..(Exists in Home section)*/
+/*Start button effect4  border-top ..(Exists in Home section)*/
+.buttons-effect4 {
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 70px;
+	text-align: center;
+	background-color: #FFF;
+	width: 150px;
+	padding: 10px;
+	border-radius: 0;
+	font-weight: bold;
+	color: #0984e3;
+	border: none;
+	position: relative;
+	overflow: visible;
+	float: left
+}
+
+.buttons-effect4.border-top span:first-child {
+	position: absolute;
+	left: -3px;
+	top: 0px;
+	width: 3px;
+	height: 0px;
+	display: block;
+	background-color: #0984e3;
+	z-index: 1;
+}
+
+.buttons-effect4.border-top span:last-child {
+	position: relative;
+	z-index: 2
+}
+
+/*End button effect4  border-top ..(Exists in Home section)*/
+/*End  buttons with effects ..(Exists in Home section)*/
+
+/*start button of Bounce effects ..(Exists in about us section)*/
+.buttons-effects buttons-effect {
+	cursor: pointer;
+	display: inline-block;
+	margin-left: -330px;
+	margin-top: 70px;
+	text-align: center;
+	background-color: #c0392b;
+	width: 150px;
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #FFF;
+	border: none;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+.bounce {
+	background-color: #a00202;
+	margin-top: 15px;
+	position: absolute;
+}
+
+.bounce:hover {
+	outline: none;
+}
+
+/*End button of Bounce effects ..(Exists in about us section)*/
+
+
+/*start progress bar .. (into home section)*/
+.progressing.animated-progress1 {
+	max-width: 300px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: #F6F6F6;
+	margin-top: 150px;
+	margin-left: 10px;
+	border: 1px solid #CCC;
+	overflow: hidden
+}
+
+.progressing.animated-progress1 span {
+
+	height: 100%;
+	width: 0;
+	background-color: #c0392b;
+	display: block;
+	color: #fff;
+	line-height: 30px;
+	text-indent: 8px;
+
+
+}
+
+.progressing.animated-progress2 {
+	max-width: 300px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: #F6F6F6;
+	margin: 20px 10px;
+	border: 1px solid #CCC;
+	overflow: hidden
+}
+
+.progressing.animated-progress2 span {
+
+	height: 100%;
+	width: 0;
+	background-color: #0984e3;
+	display: block;
+	color: #fff;
+	line-height: 30px;
+	text-indent: 8px;
+
+
+}
+
+.progressing.animated-progress3 {
+	max-width: 300px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: #F6F6F6;
+	margin-top: 20px;
+	margin-left: 10px;
+	border: 1px solid #CCC;
+	overflow: hidden
+}
+
+.progressing.animated-progress3 span {
+
+	height: 100%;
+	width: 0;
+	background-color: #19733e;
+	display: block;
+	color: #fff;
+	line-height: 30px;
+	text-indent: 8px;
+
+
+}
+
+.progressing.animated-progress4 {
+	max-width: 300px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: #F6F6F6;
+	margin-top: 20px;
+	margin-left: 10px;
+	border: 1px solid #CCC;
+	overflow: hidden
+}
+
+.progressing.animated-progress4 span {
+
+	height: 100%;
+	width: 0;
+	background-color: #ffa502;
+	display: block
+}
+
+/*End progress bar .. (into home section)*/
+
+
+
+/* start Gallery ..( that content large img of  into solution section)*/
+
+
+.gallery {
+	max-width: 800px;
+	margin: auto;
+	border: 1px solid #CCC;
+	padding: 3px;
+	background-color: #FFF;
+
+}
+
+.gallery .master-img i {
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	z-index: 2
+}
+
+.gallery .master-img .fa-chevron-left {
+	left: 0
+}
+
+.gallery .master-img .fa-chevron-right {
+	right: 0
+}
+
+.gallery img {
+	max-width: 100%;
+
+}
+
+.gallery .master-img {
+	height: 525.59px;
+	max-width: 100%;
+	position: relative
+}
+
+.gallery .thumbnails {
+	overflow: hidden;
+	margin-top: 3px;
+
+
+}
+
+.gallery .thumbnails img {
+	width: 19.6%;
+	float: left;
+	border: 3px solid #BBB;
+	cursor: pointer;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	opacity: .5
+}
+
+.gallery .thumbnails img.selected {
+	border: 3px solid brown;
+	opacity: 1
+}
+
+
+
+.gallery .thumbnails img:last-child {
+	margin-right: 0 !important;
+}
+
+/* End Gallery ..( that content large img of  into solution section)*/
+
+/* start products in general .. (into products section)*/
+/*start products ..( little img bird and flower.. into section products that content 2 square)*/
+
+.products {
+	max-width: 800px;
+	margin: 30px auto;
+	overflow: hidden;
+	display: flex
+}
+
+.products .product {
+	min-width: 49%;
+	float: left;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	padding: 10px;
+}
+
+.products .product:first-child {
+	margin-right: 1%;
+}
+
+.products .product .date {
+	display: block;
+	color: #888;
+	font-size: 12px;
+	margin: 5px 0;
+}
+
+.products .product i {
+	display: block;
+	padding: 10px;
+	background-color: #EEE;
+	margin: 10px 0;
+	cursor: pointer
+}
+
+.products .product .description {
+	padding: 10px;
+	display: none
+}
+
+/*End products ..( little img bird and flower.. into section products that content 2 square)*/
+/* start items .. (more imgs bird .. into section products that content MORE squares & lists)*/
+
+
+.items {
+	max-width: 800px;
+	margin: 30px auto;
+	overflow: hidden;
+
+
+}
+
+/* start  button that make switch between list view and grid view*/
+.items .view-options {
+	overflow: hidden;
+	padding: 10px;
+
+}
+
+.items .view-options i {
+	float: right;
+	cursor: pointer;
+
+}
+
+.items .view-options i.active {
+	color: #da220f;
+}
+
+.items .view-options .bi {
+	float: right;
+	font-size: 20px;
+	color: #e91e63;
+	font-weight: bold;
+	text-shadow: 2px 2px #673ab7;
+}
+
+/* End  button that make switch between list view and grid wiew*/
+
+.items.grid-view .item {
+	max-width: 49%;
+	float: left;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	padding: 10px;
+}
+
+.items.grid-view .item.first {
+	margin-right: 1%;
+}
+
+.items.grid-view .item .date {
+	display: block;
+	color: #888;
+	font-size: 12px;
+	margin: 5px 0;
+}
+
+.items.grid-view img {
+	width: 100%;
+	height: 140px;
+}
+
+
+.items.grid-view .item i {
+	display: block;
+	padding: 10px;
+	background-color: #EEE;
+	margin: 10px 0;
+	cursor: pointer
+}
+
+.items.grid-view .item .description {
+	padding: 10px;
+	display: none
+}
+
+.items.list-view .item
+
+/* list view*/
+	{
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	padding: 10px;
+	position: relative;
+	height: 200px;
+	margin-bottom: 10px;
+
+}
+
+.items.list-view .item h3 {
+	margin-top: 0;
+	margin-left: 0px;
+	font-weight: bolder;
+}
+
+.items.list-view .item .date {
+	display: block;
+	color: #888;
+	font-size: 12px;
+	margin: 5px 0 5px 110px;
+}
+
+.items.list-view img {
+
+	position: absolute;
+	top: 50px;
+	left: 5px;
+
+}
+
+
+.items.list-view .item i {
+	display: none
+}
+
+.items.list-view .item .description {
+	padding: 10px;
+	max-width: 84%;
+	border: 1px solid red;
+	height: 125px;
+	margin-left: 110px;
+}
+
+/* End items .. (more imgs bird .. into section products that content MORE squares & lists)*/
+/* start flower .. (more imgs flower .. into section products that content MORE squares & lists)*/
+
+.flowers {
+	max-width: 800px;
+	margin: 30px auto;
+	overflow: hidden;
+
+
+}
+
+
+/* start  button that make switch between list view and grid view*/
+.flowers .view-options {
+	overflow: hidden;
+	padding: 10px;
+	;
+
+}
+
+.flowers .view-options i {
+	float: right;
+	cursor: pointer;
+
+}
+
+.flowers .view-options i.active {
+	color: #da220f;
+}
+
+.flowers .view-options .bi2 {
+	float: right;
+	font-size: 20px;
+	color: #e91e63;
+	font-weight: bold;
+	text-shadow: 2px 2px #673ab7;
+}
+
+/* End  button that make switch between list view and grid wiew*/
+.flowers.grid-view .flower {
+	max-width: 49%;
+	height: 480px;
+	float: left;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	padding: 10px;
+	margin: 4px;
+}
+
+.flowers.grid-view .flower.second {
+	margin-right: 1%;
+}
+
+.flowers.grid-view .flower .date {
+	display: block;
+	color: #e91e63;
+	font-size: 12px;
+	margin: 5px 0;
+	font-weight: bold;
+}
+
+.flowers.grid-view img {
+	width: 100%;
+	height: 140px;
+}
+
+
+.flowers.grid-view .flower i {
+	display: block;
+	padding: 10px;
+	background-color: #EEE;
+	margin: 10px 0;
+	cursor: pointer
+}
+
+.flowers.grid-view .flower .description {
+	padding: 10px;
+	display: none;
+	border: 1px solid red;
+	height: 185px;
+	width: 99%;
+	margin-left: 4px;
+
+
+}
+
+.flowers.list-view .flower
+
+/* list view*/
+	{
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	padding: 10px;
+	position: relative;
+	height: 225px;
+	margin-bottom: 10px;
+
+}
+
+.flowers.list-view .flower h3 {
+	margin-top: 0;
+	margin-left: 0px;
+	font-weight: bolder;
+}
+
+.flowers.list-view .flower .date {
+	display: block;
+	color: #e91e63;
+	font-size: 12px;
+	margin: 5px 95px 5px 110px;
+	font-weight: bold;
+}
+
+.flowers.list-view img {
+
+	position: absolute;
+	top: 76px;
+	left: 5px;
+
+}
+
+.flowers.list-view .flower i {
+	display: none
+}
+
+.flowers.list-view .flower .description {
+	padding: 10px;
+	max-width: 84%;
+	border: 1px solid red;
+	height: 125px;
+	margin-left: 110px;
+}
+
+/* End flower .. (more imgs flower .. into section products that content MORE squares & lists)*/
+
+/* End products in general .. (into products section)*/
+
+
+/* start section CAR ( into.. contact us )*/
+.container {
+
+
+	overflow: hidden;
+}
+
+
+.container .textt-ticker {
+	max-width: 400px;
+	height: 600px;
+	margin: 20px auto;
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	left: 20px;
+}
+
+.container .textt-ticker h3 {
+	padding: 15px;
+	margin: 0;
+	background-color: #EEE;
+	text-shadow: 2px 3px #a578ad;
+	font-weight: bold
+}
+
+.container .textt-ticker span {
+	position: relative;
+	right: 0px;
+	top: 70px;
+	color: #e91e63;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 2px 2px #a578ad;
+	z-index: 2
+}
+
+.container .textt-ticker img {
+	padding: 15px;
+	max-width: 400px;
+	text-align: center;
+	background-color: darkcyan;
+	object-fit: contain;
+	margin-top: -33px;
+	left: 265px;
+}
+
+.container .textt-ticker .ticker-list li:not(.active) {
+	display: none
+}
+
+/* End section CAR ( into.. contact us )*/
+
+/*start Our form  & make message to clear any error or warring beside the put .. into services section*/
+
+.container {
+	overflow: hidden;
+
+}
+
+.container .our-form {
+	max-width: 500px;
+	margin: auto;
+
+
+}
+
+.container .our-form form input,
+.container .our-form form textarea,
+.container .our-form form .custom-file {
+	margin-right: 10px;
+	margin-bottom: 20px;
+	width: 500px;
+}
+
+.container .our-form form input[type="text"],
+.container .our-form form input[type="email"],
+.container .our-form form input[type="password"],
+.container .our-form form textarea {
+	padding: 10px;
+}
+
+.container .our-form form textarea {
+	height: 180px;
+}
+
+/* create choose file between the Input*/
+.container .our-form form .custom-file input[type="file"] {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.container .our-form form .custom-file {
+	background-color: #FFF;
+	border: 1px solid rgb(169, 169, 169);
+	position: relative;
+	height: 40px;
+
+
+}
+
+.container .our-form form .custom-file span {
+	display: inline-block;
+	padding: 8px 12px;
+	position: absolute;
+	left: 0;
+}
+
+.container .our-form form .custom-file .fa-upload {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 1;
+}
+
+.container .our-form input[type="submit"] {
+	padding: 15px;
+	font-size: 16px;
+}
+
+.container .our-form .the-message {
+	display: none;
+}
+
+/*End Our form  & make message to clear any error or warring beside the put .. into services section*/
+/*start Our form  tags span .. into services section*/
+
+.container .our-form form .tags span {
+	padding: 5px 10px;
+	background-color: #dedede;
+	display: inline-block;
+	margin: 10px 10px 10px 0;
+	border-radius: 8px;
+	color: #6f6f6f;
+}
+
+.container .our-form form .tags span i {
+	margin-right: 5px;
+	color: #969696;
+	cursor: pointer;
+}
+
+.container .our-form form .tags span i:hover {
+	color: #333;
+}
+
+/*End Our form  tags span .. into services section*/
+/* start trimmed texts .. into servies section  */
+.trimmed-texts {
+	margin: auto;
+	max-width: 800px;
+}
+
+.trimmed-texts p {
+	background-color: #DDD;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+/* End trimmed texts .. into servies section */
+
+/* start pragraph include button(show & hide) here there are second (pragraph would be hidden) .. into services section*/
+
+/* Initially, hide the extra text that 
+            can be revealed with the button */
+#moreText {
+
+	/* Display nothing for the element */
+	display: none;
+}
+
+/* End pragraph include button(show & hide) here there are second (pragraph would be hidden).. into services section*/
+
+/*start  SAME HEIGHT Div .. into about as section*/
+.same-height {
+	overflow: hidden;
+}
+
+
+.same-height div {
+	max-width: 30%;
+	float: left;
+	padding: 10px;
+	background-color: #CCC;
+	margin-right: 1%;
+	margin-top: 100px;
+
+}
+
+/*End SAME HEIGHT Div .. into about as section*/
+
+
+
+/* start shuffling Cards .. into Home  section  */
+.cards {
+	position: relative;
+	z-index: 1;
+	margin-top: 100px;
+	min-height: 500px;
+}
+
+.cards .card {
+	max-width: 350px;
+	height: 280px;
+	border: 5px solid #333;
+	position: absolute;
+	left: 20%;
+	margin-left: 225px;
+	cursor: pointer;
+
+}
+
+.cards .card p {
+	padding: 7px;
+	color: #FFF;
+	line-height: 26px;
+
+}
+
+.cards .card h3 {
+	color: lightseagreen;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.cards .card-one {
+	background-color: #16a085;
+}
+
+.cards .card-two {
+	background-color: #f39c12;
+}
+
+
+.cards .card-three {
+	background-color: #bdc3c7;
+}
+
+
+.cards .card-four {
+	background-color: #d35400;
+}
+
+
+.cards .card-five {
+	background-color: #8e44ad;
+}
+
+.cards .card-six {
+	background-color: #2980b9;
+}
+
+
+.cards .card-seven {
+	background-color: #2c3e50;
+}
+
+.cards .card-eight {
+	background-color: #8e44ad;
+}
+
+/* End shuffling Cards .. into Home  section  */
+/* start blink warning .. into others section*/
+.blink-warning {
+	background-color: #FFF;
+	padding: 20px;
+	margin: 20px auto;
+	width: 245px;
+	color: #cc0d0d;
+	border: 2px solid #10abd4;
+	text-align: center;
+}
+
+/* End blink warning .. into others section*/
+/* start To Do List .. into others section*/
+.todo-list {
+	max-width: 400px;
+	margin: 20px auto;
+	background-color: #FFF;
+	border: 3px solid #FFF;
+}
+
+.todo-list h3 {
+	margin: 0;
+	padding: 15px;
+	border-bottom: 2px solid #969696;
+	background-color: #EFEFEF;
+	font-weight: bolder;
+}
+
+.tasks {
+	list-style: none;
+}
+
+.tasks li {
+	padding: 15px 20px;
+	border-bottom: 1px dashed #CCC;
+	color: #484848;
+	cursor: pointer;
+	font-weight: bolder;
+}
+
+.add-task .task-input {
+	padding: 15px 20px;
+	border: none;
+	width: 100%;
+}
+
+/* End To Do List .. into others section*/
+/* start typeWriting Effects  ... write or increase letter automatic..(into others section>*/
+
+.typer {
+	max-width: 450px;
+	height: 300px;
+	background-color: #FFF;
+	padding: 10px;
+	margin: 30px auto;
+}
+
+/* End typeWriting Effects  ... write or increase letter automatic..(into others section)*/
+
+
+/* start window with overlay hover ..(into others section)*/
+
+.cars-overlay {
+	cursor: pointer;
+	display: inline-block;
+
+	text-align: center;
+	background-color: #0984e3;
+	max-width: 600px;
+	height: 400px;
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #FFF;
+	border: none;
+	position: relative;
+	overflow: hidden;
+
+}
+
+
+
+
+.cars-overlay.from-top span:first-child {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 0;
+	display: block;
+	background-color: rgba(111, 120, 238, 0.6);
+	z-index: 999;
+}
+
+
+.cars-overlay.from-top div {
+	position: relative;
+	z-index: 2;
+
+}
+
+/* End window with overlay hover ..(into others section)*/
+/*start make table and calculate item prices..(into others section*/
+.summary {
+	width: 100%;
+	margin: 40px auto;
+}
+
+.summary td {
+	background-color: #FFF;
+	padding: 10px;
+	vertical-align: middle;
+	border: 1px solid #CCC;
+}
+
+.summary tr:first-child td {
+	background-color: #444;
+	color: #FFF;
+}
+
+.summary tr:last-child td:first-child {
+	text-align: right;
+}
+
+/*End make table and calculate item prices..(into others section*/
+
+/* start proverbs or words*/
+.text-ticker {
+	width: 400px;
+	margin: 20px auto;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+}
+
+.text-ticker h3 {
+	padding: 15px;
+	margin: 0;
+	background-color: #EEE;
+}
+
+.text-ticker .ticker-list {
+	list-style: none;
+	background-color: #fff;
+}
+
+.text-ticker .ticker-list li {
+	padding: 15px;
+}
+
+.text-ticker .ticker-list li:not(.active) {
+	display: none;
+}
+
+/* End proverbs or words*/
+
+
+
+/* start Dynamic Tabs .. into others section*/
+.tabs-list li {
+	padding: 15px 30px;
+	background-color: #FFF;
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	cursor: pointer;
+	border: 1px solid #CCC;
+}
+
+.tabs-list .active,
+.tabs-list li:hover {
+	color: #080;
+
+}
+
+.tabs-list .active {
+	border-bottom: 1px solid #FFF;
+	z-index: 2;
+}
+
+.content-list {
+	border: 1px solid #CCC;
+	background-color: #FFF;
+	position: relative;
+}
+
+.content-list>div {
+	padding: 20px;
+	min-height: 200px;
+}
+
+.content-list>div:not(:first-child) {
+	display: none;
+}
+
+.switch-tabs {
+	padding: 10px;
+	background-color: #EFEFEF;
+	border: 1px solid #CCC;
+	display: inline-block;
+	margin: 20px;
+	cursor: pointer;
+}
+
+/* start change tab from top to left And vice versa.. (and switch tabs view)*/
+.left-tabs {
+	overflow: hidden;
+
+}
+
+.left-tabs .tabs-list,
+.left-tabs .content-list {
+	float: left;
+}
+
+.left-tabs .tabs-list .active {
+	border-bottom: 1px solid #CCC;
+	border-right: 1px solid #FFF;
+}
+
+.left-tabs .tabs-list li {
+	display: block;
+	top: 0;
+	left: 1px;
+}
+
+.left-tabs .content-list {
+	min-height: 300px;
+	width: calc(100% - 103px);
+}
+
+/*  End change tab from top to left And vice versa .. (and switch tabs view)*/
+/* End Dynamic Tabs .. into others section*/
+
+/* start Email suggest Box .. (into others section*/
+.email-suggest {
+	margin: 20px 0 0;
+	padding: 10px;
+	min-width: 320px;
+	border: 1px solid #CCC;
+}
+
+.suggest-box {
+	margin: 15px 302px 0;
+	min-width: 320px;
+	background-color: #FDFDFD;
+	position: relative;
+	border: 1px solid #e8e8e8;
+	line-height: 1.8;
+	color: #888;
+}
+
+.suggest-box:before {
+	content: '';
+	position: absolute;
+	left: 10px;
+	top: -20px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: transparent transparent #FDFDFD;
+}
+
+.suggest-box li {
+	padding: 10px;
+}
+
+
+/* End Email suggest Box .. (into others section*/
